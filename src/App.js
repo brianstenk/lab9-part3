@@ -1,9 +1,16 @@
-
+import { Counter } from './components/Counter';
+import { useState } from 'react';
 import './App.css';
 
-function App() {
+function App() {  
+
   return (
-    <div>Hello World!</div>
+    <>
+      <Counter value={1} />
+      <Counter value={3} />
+      <Counter value={5} />
+      <Counter value={8} />
+    </>
   );
 }
 
